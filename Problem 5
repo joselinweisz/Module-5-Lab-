@@ -1,0 +1,71 @@
+#Joselin Weisz
+#2/10/2025
+#Probelm #5
+#this program draws some nice little turtle flowers. 
+
+import turtle
+wn = turtle.Screen()
+nessie=turtle.Turtle()
+nessie.color("green")
+nessie.fillcolor("green")
+
+nessie.right(90)
+
+for i in (range(3)):
+    nessie.forward(100)
+    nessie.left(90)
+    nessie.forward(30)
+    nessie.left(90)
+    nessie.forward(50)
+    nessie.left(180)
+    nessie.forward(50)
+    nessie.left(90)
+    nessie.forward(30)
+    nessie.left(90)
+    nessie.forward(100)
+    nessie.right(180)
+
+
+nessie.shape("turtle")
+nessie.color("pink")
+
+for i in (range(4)):
+    nessie.stamp()
+    nessie.right(90)
+nessie.up ()
+nessie.right(90)
+nessie.forward(60)
+for i in (range(4)):
+    nessie.stamp()
+    nessie.right(90)
+nessie.forward(60)
+for i in (range(4)):
+    nessie.stamp()
+    nessie.right(90)
+nessie.forward(60)
+for i in (range(4)):
+    nessie.stamp()
+    nessie.right(90)
+nessie.left(90)
+nessie.forward(50)
+nessie.left(90)
+nessie.forward(30)
+nessie.color("turquoise")
+for i in (range(4)):
+    nessie.stamp()
+    nessie.right(90)
+nessie.forward(60)
+for i in (range(4)):
+    nessie.stamp()
+    nessie.right(90)
+nessie.forward(60)
+for i in (range(4)):
+    nessie.stamp()
+    nessie.right(90)
+
+
+
+
+ 
+
+
