@@ -8,4 +8,89 @@
 #For multiples of three, it prints “Divisible by three” instead of the number.
 #For the multiples of five it prints “Divisible by five” instead of the number.
 #For numbers which are multiples of both three and five, it prints “Divisible by both”. 
-#Program #5 draws a little turtle flower. 
+#Program #5 draws a little turtle flower.
+
+
+
+#Joselin Weisz
+#2/10/2025
+#answers to problems 1-4 below:
+
+#Problem #1 This program prints "Hello World" 100 times
+
+print("""
+
+Problem 1
+
+""")
+for i in range(100):
+    print("Hello World")
+
+#Problem #2 This program writes this list of numbers, each on a new line, followed by the list of numbers and its square on a new line
+print("""
+
+Problem 2
+
+""")
+
+for number in [12, 10, 32, 3, 66, 17, 42, 99, 20]:
+    print (number)
+for number in [12, 10, 32, 3, 66, 17, 42, 99, 20]:
+    print (number,(number**2))
+
+
+
+#Problem #3 This program asks the user for the number of sides, the length of the side, the color of the line, and the fill color of a regular polygon.
+#The program draws the polygon and then fills it in.
+
+print("""
+
+Problem 3
+
+""")
+
+
+sides=input("How many sides?")
+sides=(int(sides))
+length = input("Length of sides?")
+length = (int(length))
+lcolor = input("Color of lines?")
+fcolor = input ("Color of fill?")
+angle = 360/sides
+
+import turtle
+wn = turtle.Screen()
+nessie=turtle.Turtle()
+nessie.color(lcolor)
+nessie.fillcolor(fcolor)
+nessie.begin_fill()
+
+for i in range(sides):
+    nessie.forward(length)
+    nessie.right(angle)
+    
+nessie.end_fill()
+
+#Problem #4 This program interates integers from 1 to 50.
+#For multiples of three, it prints “Divisible by three” instead of the number.
+#For the multiples of five it prints “Divisible by five” instead of the number.
+#For numbers which are multiples of both three and five, it prints “Divisible by both”. 
+print("""
+
+Problem 4
+
+""")
+
+
+for i in range(1, 51):
+    if i % 3 == 0 and i % 5 == 0:
+        print("Divisible by both")
+    elif i % 3 == 0:
+        print("Divisible by three")
+    elif i % 5 == 0:
+        print("Divisible by five")
+    else:
+        print(i)
+print("""
+
+please see the other file for probelm 5""")
